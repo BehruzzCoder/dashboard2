@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { LogoIcon } from "../assets/icons";
 import NavItem from "../components/NavItem";
+import { navList } from "../hooks/paths";
 const Navbar = () => {
 
     return (

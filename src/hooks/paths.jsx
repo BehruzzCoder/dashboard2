@@ -1,6 +1,6 @@
 import React from "react"
 import { AgentsIcon, ArticlesIcon, ContactsIcon, IdeasIcon, OverviewIcon, TicketsIcon } from "../assets/icons"
-import { Overview } from "../pages"
+import { Agents, Articles, Contacts, Ideas, Overview, Tickets } from "../pages"
 
 
 export const paths = {
@@ -61,6 +61,7 @@ export const pageRoueteList = [
         id: 2,
         path: paths.tickets,
         element: <Tickets />
+
     },
     {
         id: 3,
@@ -71,6 +72,7 @@ export const pageRoueteList = [
         id: 4,
         path: paths.contacts,
         element: <Contacts />
+
     },
     {
         id: 5,
@@ -81,6 +83,7 @@ export const pageRoueteList = [
         id: 6,
         path: paths.articles,
         element: <Articles />
+
     }
     
 ]
