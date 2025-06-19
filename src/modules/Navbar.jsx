@@ -13,7 +13,7 @@ const Navbar = () => {
                 <span className="text-[#A4A6B3] text-[19px] font-bold">Dashboard Kit</span>
             </Link>
             </div>
-            <nav className="flex flex-col">
+            <nav className="bg-black text-white flex flex-col">
                 {navList.map(item => <NavItem key={item.id} item={item}/>)}
             </nav>
         </div>
