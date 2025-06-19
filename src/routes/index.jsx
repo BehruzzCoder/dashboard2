@@ -1,15 +1,16 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
-import { pageRoueteList } from "../hooks/paths";
+import React, { Suspense } from 'react'
+import { Route, Routes } from 'react-router-dom'
+import { pageRouteList } from '../hooks/paths'
+import LoadingPage from '../components/LoadingPage'
 
 const PageRoutes = () => {
   return (
-    <Routes>
-      {pageRoueteList.map((item) => (
-        <Route key={item.id} path={item.path} element={item.element} />
-      ))}
-    </Routes>
-  );
-};
+    <>
+    <Suspense fallback={<LoadingPage/>}>
+      <Routes> {pageRouteList.map(item => <Route key={item.id} path={item.path} element={item.element}/>)} </Routes>
+    </Suspense>
+    </>
+  )
+}
 
-export default PageRoutes;
+export default PageRoutes

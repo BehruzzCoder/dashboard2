@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react'
 
 const Ideas = () => {
-    return (
-        <div></div>
-    )
+  return (
+    <div>Ideas</div>
+  )
 }
 
 export default Ideas
